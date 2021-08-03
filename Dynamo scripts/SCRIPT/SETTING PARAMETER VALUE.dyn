@@ -1,0 +1,80 @@
+<Workspace Version="1.3.3.4111" X="1473.4568755264" Y="832.62639886992" zoom="0.769442465973309" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="0880840b-3420-4f0a-9052-6eef73fef5c9" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.SetParameterByName" x="-431.813474452764" y="-773.843768609612" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.SetParameterByName@string,var">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <DSRevitNodesUI.FamilyTypes guid="c5bb2953-d72b-499d-91b8-5eb8980b7456" type="DSRevitNodesUI.FamilyTypes" nickname="Family Types" x="-2564.47700684303" y="-1368.96572389844" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="28:QAF_QDC_MEP_ME_WATER TANK:PWT-02" />
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="edfb76f3-3507-48c8-99b5-b3c1685203a7" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Family.Types" x="-1909.50529917143" y="-1075.14537747322" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Family.Types">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="8be2f6db-611c-4890-b238-aa674f8f186d" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Family.ByName" x="-2185.00894865069" y="-1070.11931732195" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Family.ByName@string">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.StringInput guid="0d0f8166-5c39-4c0a-94b0-e04866ea0508" type="CoreNodeModels.Input.StringInput" nickname="String" x="-2557.99668563813" y="-1065.88159654041" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>QAF_QDC_MEP_PA_BALL VALVE</System.String>
+      <System.String value="QAF_QDC_MEP_PA_BALL VALVE" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.CreateList guid="640e77df-58b5-4674-ba83-58faadbc7e66" type="CoreNodeModels.CreateList" nickname="List.Create" x="-922.839097710074" y="-694.037188733199" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="3">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </CoreNodeModels.CreateList>
+    <CoreNodeModels.CreateList guid="52cb9408-217d-4b72-af04-ee39164353eb" type="CoreNodeModels.CreateList" nickname="List.Create" x="-964.202762163471" y="-438.027258566417" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="3">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </CoreNodeModels.CreateList>
+    <CoreNodeModels.Input.StringInput guid="6def812f-3059-4cf3-9232-66f26094cb62" type="CoreNodeModels.Input.StringInput" nickname="String" x="-1195.42037083628" y="-203.919394477325" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>2000</System.String>
+      <System.String value="2000" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="fd443108-5a7f-4677-bd14-b16367c424b0" type="CoreNodeModels.Input.StringInput" nickname="String" x="-1263.8613128067" y="-316.463895380415" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>D20</System.String>
+      <System.String value="D20" />
+    </CoreNodeModels.Input.StringInput>
+    <DSRevitNodesUI.FamilyInstanceParameters guid="29e397bd-db85-4f2c-b3b7-7b7936a27e2f" type="DSRevitNodesUI.FamilyInstanceParameters" nickname="Get Family Parameter" x="-1552.25032040508" y="-974.184541691804" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="true" index="-1">
+      <PortInfo index="0" default="False" />
+      <familyid value="950336" />
+      <index value="-1" />
+    </DSRevitNodesUI.FamilyInstanceParameters>
+    <CoreNodeModels.Input.StringInput guid="59217213-7fce-43cc-92c4-20e5315c47e9" type="CoreNodeModels.Input.StringInput" nickname="String" x="-1256.77863426213" y="-419.30279503787" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>GATE VALVE</System.String>
+      <System.String value="GATE VALVE" />
+    </CoreNodeModels.Input.StringInput>
+    <DSRevitNodesUI.FamilyInstanceParameters guid="cfd4b44f-4378-479b-b178-c3eaf73c83f7" type="DSRevitNodesUI.FamilyInstanceParameters" nickname="Get Family Parameter" x="-1569.62669515883" y="-637.867637405038" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="true" index="-1">
+      <PortInfo index="0" default="False" />
+      <familyid value="950336" />
+      <index value="-1" />
+    </DSRevitNodesUI.FamilyInstanceParameters>
+    <DSRevitNodesUI.FamilyInstanceParameters guid="7b9616ca-a718-4035-942d-0b273b6605f7" type="DSRevitNodesUI.FamilyInstanceParameters" nickname="Get Family Parameter" x="-1540.47313100341" y="-838.556843114639" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="true" index="-1">
+      <PortInfo index="0" default="False" />
+      <familyid value="950336" />
+      <index value="-1" />
+    </DSRevitNodesUI.FamilyInstanceParameters>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="edfb76f3-3507-48c8-99b5-b3c1685203a7" start_index="0" end="0880840b-3420-4f0a-9052-6eef73fef5c9" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="edfb76f3-3507-48c8-99b5-b3c1685203a7" start_index="0" end="29e397bd-db85-4f2c-b3b7-7b7936a27e2f" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="edfb76f3-3507-48c8-99b5-b3c1685203a7" start_index="0" end="cfd4b44f-4378-479b-b178-c3eaf73c83f7" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="edfb76f3-3507-48c8-99b5-b3c1685203a7" start_index="0" end="7b9616ca-a718-4035-942d-0b273b6605f7" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="8be2f6db-611c-4890-b238-aa674f8f186d" start_index="0" end="edfb76f3-3507-48c8-99b5-b3c1685203a7" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="0d0f8166-5c39-4c0a-94b0-e04866ea0508" start_index="0" end="8be2f6db-611c-4890-b238-aa674f8f186d" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="640e77df-58b5-4674-ba83-58faadbc7e66" start_index="0" end="0880840b-3420-4f0a-9052-6eef73fef5c9" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="52cb9408-217d-4b72-af04-ee39164353eb" start_index="0" end="0880840b-3420-4f0a-9052-6eef73fef5c9" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="6def812f-3059-4cf3-9232-66f26094cb62" start_index="0" end="52cb9408-217d-4b72-af04-ee39164353eb" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="fd443108-5a7f-4677-bd14-b16367c424b0" start_index="0" end="52cb9408-217d-4b72-af04-ee39164353eb" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="29e397bd-db85-4f2c-b3b7-7b7936a27e2f" start_index="0" end="640e77df-58b5-4674-ba83-58faadbc7e66" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="59217213-7fce-43cc-92c4-20e5315c47e9" start_index="0" end="52cb9408-217d-4b72-af04-ee39164353eb" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="cfd4b44f-4378-479b-b178-c3eaf73c83f7" start_index="0" end="640e77df-58b5-4674-ba83-58faadbc7e66" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="7b9616ca-a718-4035-942d-0b273b6605f7" start_index="0" end="640e77df-58b5-4674-ba83-58faadbc7e66" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

@@ -1,0 +1,52 @@
+<Workspace Version="1.3.2.2480" X="194.708590491117" Y="390.745258594932" zoom="0.655863556785955" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="5e546e0b-71c8-4fb4-ba68-2a24756bc265" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="3D Views To NWC Export" x="896.853812596127" y="-183.205342709143" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <ID value="1a17369e-6616-4824-a1f1-1b1fcab8aa20" />
+      <Name value="3D Views To NWC Export" />
+      <Description value="This Node can export a list of 3d Views." />
+      <Inputs>
+        <Input value="Directory Name" />
+        <Input value="List Of Views" />
+        <Input value="Boolean" />
+      </Inputs>
+      <Outputs>
+        <Output value="OUT" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <DSRevitNodesUI.Views guid="e9be46c8-618c-4fd0-9334-c7898799da01" type="DSRevitNodesUI.Views" nickname="Views" x="547.398401631947" y="-177.129485761985" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="31:3D-Fire Pump" />
+    <CoreNodeModels.Input.BoolSelector guid="d280573e-7f34-41a3-a7d3-e97660011684" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="554.184732572746" y="-56.4148213552796" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>False</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <CoreNodeModels.Input.Directory guid="c13a65be-733e-4b4a-af2c-9b8316252229" type="CoreNodeModels.Input.Directory" nickname="Directory Path" x="-104.280372997442" y="-268.913419196347" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>C:\Users\System-04\Desktop\New folder</System.String>
+      <HintPath>C:\Users\System-04\Desktop\New folder</HintPath>
+    </CoreNodeModels.Input.Directory>
+    <CoreNodeModels.Input.DirectoryObject guid="7f608339-b647-4444-b517-f7d12e2cdd4b" type="CoreNodeModels.Input.DirectoryObject" nickname="Directory.FromPath" x="208.141817511055" y="-266.218865455734" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Input.DirectoryObject>
+    <CoreNodeModels.FromObject guid="81c4119e-fd22-443e-b1be-2dccfca6e2ef" type="CoreNodeModels.FromObject" nickname="String from Object" x="554.945813361512" y="-266.894736613026" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.FromObject>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="9a04f2da-22c7-41c7-8578-1a2e4acdf1ee" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="402.935942411788" y="-267.242398572996" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="a;" ShouldFocus="false">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.CodeBlockNodeModel>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="e9be46c8-618c-4fd0-9334-c7898799da01" start_index="0" end="5e546e0b-71c8-4fb4-ba68-2a24756bc265" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d280573e-7f34-41a3-a7d3-e97660011684" start_index="0" end="5e546e0b-71c8-4fb4-ba68-2a24756bc265" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="c13a65be-733e-4b4a-af2c-9b8316252229" start_index="0" end="7f608339-b647-4444-b517-f7d12e2cdd4b" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="7f608339-b647-4444-b517-f7d12e2cdd4b" start_index="0" end="9a04f2da-22c7-41c7-8578-1a2e4acdf1ee" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="81c4119e-fd22-443e-b1be-2dccfca6e2ef" start_index="0" end="5e546e0b-71c8-4fb4-ba68-2a24756bc265" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="9a04f2da-22c7-41c7-8578-1a2e4acdf1ee" start_index="0" end="81c4119e-fd22-443e-b1be-2dccfca6e2ef" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

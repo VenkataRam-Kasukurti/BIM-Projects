@@ -1,0 +1,67 @@
+<Workspace Version="1.3.3.4111" X="1142.00354955872" Y="339.189967825465" zoom="0.0670908106878906" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Nodes.DSModelElementsSelection guid="02dc24d4-1308-4c89-a3a0-8a98b7244161" type="Dynamo.Nodes.DSModelElementsSelection" nickname="Select Model Elements" x="-239.764928406647" y="-172.585262171527" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <instance id="6a20de40-ed43-4fac-8c30-158f3425756b-000616fc" />
+    </Dynamo.Nodes.DSModelElementsSelection>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7b01aec6-e8b7-4b50-a3d9-957293d6d588" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.Geometry" x="155.311713436782" y="92.2169761608221" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.Geometry">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Watch guid="c49a488d-6406-4e19-ac67-8a9385de8e4e" type="CoreNodeModels.Watch" nickname="Watch" x="478.961133757581" y="136.916611460631" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="5626be1e-c5aa-44b8-a3e0-41daff92b8e8" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="List.FilterByBoolMask" x="1159.17557450139" y="-101.542798417213" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.List.FilterByBoolMask@var[]..[],var[]..[]">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.StringInput guid="9dde10f4-a820-4840-8c77-0e828d0aaad2" type="CoreNodeModels.Input.StringInput" nickname="String" x="862.218982622612" y="133.381941429898" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>Ellipse</System.String>
+      <System.String value="Ellipse" />
+    </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="a84125ef-5da7-474c-9119-d70894a5dce3" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="CAD.CurvesFromCADLayers" x="574.96798713952" y="-431.375692487457" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\bimorphNodes\bin\BimorphNodes.dll" function="CAD.CurvesFromCADLayers@Revit.Elements.Element,string[],bool,string[]">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+      <PortInfo index="3" default="True" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.StringInput guid="df19d7ac-b4de-4f04-b87d-81748b62f211" type="CoreNodeModels.Input.StringInput" nickname="String" x="293.069949516259" y="-318.108837027889" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>FIRE SPRINKLER</System.String>
+      <System.String value="FIRE SPRINKLER" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Watch guid="22fd5780-7940-436d-8762-440b48241336" type="CoreNodeModels.Watch" nickname="Watch" x="1154.90892653066" y="-591.722377599935" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f034b9eb-fe66-4ee6-8a14-4b45d6e600e4" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="CADTextData.FromLayers" x="69.56102945592" y="-641.629734466216" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\bimorphNodes\bin\BimorphNodes.dll" function="CADTextData.FromLayers@Revit.Elements.Element,string[]">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="4866ec74-61e1-4c33-bac7-4af1395b9474" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="CAD.PointsFromCADLayers" x="641.533689632145" y="-648.916010392028" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\bimorphNodes\bin\BimorphNodes.dll" function="CAD.PointsFromCADLayers@Revit.Elements.Element,string[]">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="4c6a8610-fe1d-450f-9f85-a03c8da6ae3c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Curve.PointAtSegmentLength" x="1669.87314469219" y="-438.520831513705" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Curve.PointAtSegmentLength@double">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Watch guid="94c722bb-6998-4a63-94ef-210ea52fee55" type="CoreNodeModels.Watch" nickname="Watch" x="2192.08726328333" y="-567.19702139194" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="02dc24d4-1308-4c89-a3a0-8a98b7244161" start_index="0" end="7b01aec6-e8b7-4b50-a3d9-957293d6d588" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="02dc24d4-1308-4c89-a3a0-8a98b7244161" start_index="0" end="5626be1e-c5aa-44b8-a3e0-41daff92b8e8" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="02dc24d4-1308-4c89-a3a0-8a98b7244161" start_index="0" end="a84125ef-5da7-474c-9119-d70894a5dce3" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="7b01aec6-e8b7-4b50-a3d9-957293d6d588" start_index="0" end="c49a488d-6406-4e19-ac67-8a9385de8e4e" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="9dde10f4-a820-4840-8c77-0e828d0aaad2" start_index="0" end="5626be1e-c5aa-44b8-a3e0-41daff92b8e8" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a84125ef-5da7-474c-9119-d70894a5dce3" start_index="0" end="22fd5780-7940-436d-8762-440b48241336" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="df19d7ac-b4de-4f04-b87d-81748b62f211" start_index="0" end="a84125ef-5da7-474c-9119-d70894a5dce3" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="22fd5780-7940-436d-8762-440b48241336" start_index="0" end="4c6a8610-fe1d-450f-9f85-a03c8da6ae3c" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4c6a8610-fe1d-450f-9f85-a03c8da6ae3c" start_index="0" end="94c722bb-6998-4a63-94ef-210ea52fee55" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="52594.8264986207" eyeY="54211.0072558799" eyeZ="-506291.336699989" lookX="2.7634347351559" lookY="-3.19588288845989" lookZ="-1.51987886946881" upX="0.477222133290297" upY="0.838670567945428" upZ="-0.262470405874564" />
+  </Cameras>
+</Workspace>

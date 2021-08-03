@@ -1,0 +1,70 @@
+<Workspace Version="1.3.3.4111" X="-101.555364680841" Y="437.366650959001" zoom="0.684181708182626" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="06679366-8e90-48da-b3da-bbae46eb3ad9" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Workset.Create" x="2225.68051199142" y="-198.810539333154" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <ID value="d24219e4-12bd-4f68-83fc-c6859f267352" />
+      <Name value="Workset.Create" />
+      <Description value="Creates worksets, input is a string or list of strings.&#xD;&#xA;Existing worksetnames are ignored." />
+      <Inputs>
+        <Input value="names" />
+      </Inputs>
+      <Outputs>
+        <Output value="names" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f54e7298-2bc1-4080-9390-84b26b421aba" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Excel.ReadFromFile" x="828.701509603113" y="-216.996108734492" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="DSOffice.dll" function="DSOffice.Excel.ReadFromFile@var,string,bool">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.Filename guid="8d29aac4-6778-4177-826d-e61f18821191" type="CoreNodeModels.Input.Filename" nickname="File Path" x="209.627238738314" y="-260.773980275925" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>E:\SABS DATA\MOD\WORKSETS FOR MOD PROJECT.xlsx</System.String>
+      <HintPath>E:\SABS DATA\MOD\WORKSETS FOR MOD PROJECT.xlsx</HintPath>
+    </CoreNodeModels.Input.Filename>
+    <CoreNodeModels.Input.FileObject guid="3433283d-7bdc-44a7-ae4c-ac6083678514" type="CoreNodeModels.Input.FileObject" nickname="File.FromPath" x="598.311253199745" y="-254.195670235888" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Input.FileObject>
+    <CoreNodeModels.Input.StringInput guid="a13df624-066a-42b7-a73a-d54c8432aa80" type="CoreNodeModels.Input.StringInput" nickname="String" x="588.064602566156" y="-148.407940471695" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>FIRE</System.String>
+      <System.String value="FIRE" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.BoolSelector guid="cec77291-cb3d-40e6-afd6-567e1f56728a" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="561.435342514235" y="-66.8997624450739" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>False</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <CoreNodeModels.Watch guid="60295bfe-b6af-42b3-ae27-9a79f1023a16" type="CoreNodeModels.Watch" nickname="Watch" x="1701.2506367455" y="-262.114663300467" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="e8c2e81f-53f1-45d8-b47c-a5d43907d2c5" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="List.Transpose" x="1176.480410531" y="-282.857792193342" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.List.Transpose@var[]..[]">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ba83c358-0b9b-4bbf-a470-b24c96a344c8" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="List.GetItemAtIndex" x="1424.70478948373" y="-278.183538669473" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.List.GetItemAtIndex@var[]..[],int">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.DoubleInput guid="508040ba-00c1-4127-8619-0833a0c9bf55" type="CoreNodeModels.Input.DoubleInput" nickname="Number" x="1277.13291021592" y="-176.28036076523" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Double value="0" />
+    </CoreNodeModels.Input.DoubleInput>
+    <CoreNodeModels.Watch guid="26e4132a-355f-4093-93f5-fe6016751519" type="CoreNodeModels.Watch" nickname="Watch" x="2629.10687373627" y="-219.544572451489" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="06679366-8e90-48da-b3da-bbae46eb3ad9" start_index="0" end="26e4132a-355f-4093-93f5-fe6016751519" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="f54e7298-2bc1-4080-9390-84b26b421aba" start_index="0" end="e8c2e81f-53f1-45d8-b47c-a5d43907d2c5" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="8d29aac4-6778-4177-826d-e61f18821191" start_index="0" end="3433283d-7bdc-44a7-ae4c-ac6083678514" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3433283d-7bdc-44a7-ae4c-ac6083678514" start_index="0" end="f54e7298-2bc1-4080-9390-84b26b421aba" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a13df624-066a-42b7-a73a-d54c8432aa80" start_index="0" end="f54e7298-2bc1-4080-9390-84b26b421aba" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="cec77291-cb3d-40e6-afd6-567e1f56728a" start_index="0" end="f54e7298-2bc1-4080-9390-84b26b421aba" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="60295bfe-b6af-42b3-ae27-9a79f1023a16" start_index="0" end="06679366-8e90-48da-b3da-bbae46eb3ad9" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="e8c2e81f-53f1-45d8-b47c-a5d43907d2c5" start_index="0" end="ba83c358-0b9b-4bbf-a470-b24c96a344c8" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="ba83c358-0b9b-4bbf-a470-b24c96a344c8" start_index="0" end="60295bfe-b6af-42b3-ae27-9a79f1023a16" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="508040ba-00c1-4127-8619-0833a0c9bf55" start_index="0" end="ba83c358-0b9b-4bbf-a470-b24c96a344c8" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
